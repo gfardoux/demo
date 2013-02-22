@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.2.0.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/jquery-1.8.2.min.js"></script>
+		<script src="jquery-mobile/jquery.mobile-1.2.0.min.js"></script>
+		<script type="text/javascript" src="js/cordova-2.4.0.js"></script>
+		<script type="text/javascript" src="js/PushNotification.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	<title>GameClub</title>	
+	</head>
+	
+<body class="ui-mobile-viewport ui-overlay-c"><!-- Start of first page: #one --> 
+
+
+	<div data-role="page" id="home" data-url="home" tabindex="0" class="page">
+
+		<div data-role="header" role="banner" class="head">		
+			<img src="img/logo_gc_top.png" />
+			<a href="#page2" data-direction="reverse" data-role="button" data-transition="slidefade">Page 2</a>
+			<a href="#popup" data-direction="reverse" data-role="button" data-transition="flip">F.A.Q.</a>
+		</div><!-- /header -->
+
+		<div data-role="content" class="content" role="main">	
+			<div id="image_ph"><img src="jquery-mobile/images/ajax-loader.gif" /></div>
+			<h2 id="title_ph">Chargement en cours...</h2>
+			<div id="description_ph"></div>
+		</div><!-- /content -->
+
+		<div data-role="footer" class="ui-footer ui-bar-d" role="contentinfo">
+			<h4 class="ui-title">Pied de page</h4>
+		</div><!-- /footer -->
+	</div><!-- /page one --><!-- Start of second page: #two -->
+
+
+
+	<div data-role="page" id="page2" data-url="page2" class="page">
+
+		<div data-role="header" class="head">		
+			<img src="img/logo_gc_top.png" />
+			<a href="#home" data-direction="reverse" data-role="button" data-transition="slidefade">Home</a>
+			<a href="#popup" data-direction="reverse" data-role="button" data-transition="flip">F.A.Q.</a>
+		</div><!-- /header -->
+
+		<div data-role="content" class="content">	
+			<h2>Deux</h2>
+			<p>J'ai un id "two" sur mon conteneur de page. Je suis le second conteneur de page dans ce modèle multi-page.</p>	
+			<p>Notez que le thème est différent pour cette page car nous avons ajouté ici quelques assignations de nuancier <code>data-theme</code> pour montrer combien cela est flexible. Vous pouvez ajouter n'importe quel contenu ou widget à ces pages, mais nous gardons ces cas simples.</p>	
+			
+
+		</div><!-- /content -->
+
+		<div data-role="footer">
+			<h4>Pied de page</h4>
+		</div><!-- /footer -->
+	</div><!-- /page two --><!-- Start of third page: #popup -->
+
+
+
+	<div data-role="page" id="popup" data-url="popup" class="page">
+
+		<div data-role="header" class="head">			
+			<img src="img/logo_gc_top.png" />
+			<a href="#home" data-direction="reverse" data-role="button" data-transition="slidefade">Home</a>
+			<a href="#page2" data-direction="reverse" data-role="button" data-transition="slidefade">Page 2</a>
+		</div><!-- /header -->
+
+		<div data-role="content" class="content">	
+			<span class="title">FAQ GameClub</span>
+				<span><strong>Le passage de Lorem Ipsum standard, utilisé depuis 1500</strong></span>
+				<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+					labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+					laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+					voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+					non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				<span><strong>Section 1.10.32 du "De Finibus Bonorum et Malorum" de Ciceron (45 av. J.-C.)</strong></span>
+				<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+					laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
+					architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit 
+					aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem 
+					 molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>				
+		</div><!-- /content -->
+
+		<div data-role="footer">
+			<h4>Pied de page</h4>
+		</div><!-- /footer -->
+	</div><!-- /page popup -->
+	
+</body>	
+</html>

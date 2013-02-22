@@ -1,0 +1,94 @@
+@font-face {
+	font-family: DIN-Regular;
+	src: url(../fonts/DIN-Regular.ttf);
+}
+
+@font-face {
+	font-family: DIN-Bold;
+	src: url(../fonts/DIN-Bold.ttf);
+}
+
+.ui-body-c {
+	font-family: DIN-Regular, Helvetica, Arial, Sans-serif;
+}
+
+strong, .content .title{
+	font-family: DIN-Bold, Helvetica, Arial, Sans-serif;
+}
+
+div#image_ph {
+	align: center;
+	text-align:center;
+	margin:0 auto;
+	padding: 0;
+}
+
+img.main {
+	width: 100%;
+}
+
+/** STRUCTURE **/
+
+body{
+	line-height: 1em;
+}
+
+.page{ 
+	background-image: linear-gradient(bottom, rgb(212,211,205) 0%, rgb(232,231,228) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(212,211,205) 0%, rgb(232,231,228) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(212,211,205) 0%, rgb(232,231,228) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(212,211,205) 0%, rgb(232,231,228) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(212,211,205) 0%, rgb(232,231,228) 100%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(212,211,205)),
+		color-stop(1, rgb(232,231,228))
+	);background:#e8e7e4;
+}
+
+.page{
+	text-align:center;
+}
+
+.head{
+	margin: 0 auto;
+	padding: 10px 0;
+	width:100%;
+	text-align:center;
+}
+
+.close{
+	position:absolute;
+	top:5px;
+	right:5%;
+	width:68px;
+	height:68px;
+	background: url(../img/close.png) center no-repeat;
+	z-index: 1;
+}
+
+.content{
+	background:#ffffff;
+	padding:5%;
+	width:80%;
+	margin: 5% auto;
+	text-align:left;
+	border:1px solid #c7c5c3;
+}
+
+.content span{
+	display:block;
+}
+
+.content span strong{
+	font-weight:bold;
+}
+
+.content .title{
+	color:#3772bf;
+	margin: 0 0 3%;
+	font-weight:bold;
+}
